@@ -6,6 +6,10 @@
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode"
     ],
+    "runArgs": [
+        "--env-file",
+        ".env"
+    ],
     "settings": {
         "editor.tabSize": 4,
         "editor.detectIndentation": false,
