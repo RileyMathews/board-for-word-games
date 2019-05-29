@@ -1,0 +1,25 @@
+{
+    "context": "..",
+    "dockerFile": "./Dockerfile",
+    "appPort": 3000,
+    "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+    ],
+    "settings": {
+        "editor.tabSize": 4,
+        "editor.detectIndentation": false,
+        "eslint.validate": [
+            "javascript",
+            "javascriptreact",
+            {
+                "language": "typescript",
+                "autoFix": true
+            },
+            {
+                "language": "typescriptreact",
+                "autoFix": true
+            }
+        ]
+    }
+}
