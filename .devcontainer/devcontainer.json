@@ -1,29 +1,21 @@
 {
-    "context": "..",
-    "dockerFile": "./Dockerfile",
-    "appPort": 3000,
-    "extensions": [
-        "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode"
-    ],
-    "runArgs": [
-        "--env-file",
-        ".env"
-    ],
-    "settings": {
-        "editor.tabSize": 4,
-        "editor.detectIndentation": false,
-        "eslint.validate": [
-            "javascript",
-            "javascriptreact",
-            {
-                "language": "typescript",
-                "autoFix": true
-            },
-            {
-                "language": "typescriptreact",
-                "autoFix": true
-            }
-        ]
-    }
+  "context": "..",
+  "dockerFile": "./Dockerfile",
+  "appPort": 3000,
+  "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"],
+  "runArgs": ["--env-file", ".env"],
+  "settings": {
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      {
+        "language": "typescript",
+        "autoFix": true
+      },
+      {
+        "language": "typescriptreact",
+        "autoFix": true
+      }
+    ]
+  }
 }
