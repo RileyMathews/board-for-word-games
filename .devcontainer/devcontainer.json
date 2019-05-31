@@ -2,10 +2,7 @@
   "context": "..",
   "dockerFile": "./Dockerfile",
   "appPort": 3000,
-  "extensions": [
-    "ms-vscode.vscode-typescript-tslint-plugin",
-    "esbenp.prettier-vscode"
-  ],
+  "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"],
   "runArgs": ["--env-file", ".env"],
   "settings": {
     "eslint.validate": [

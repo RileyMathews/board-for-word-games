@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import Card from "./card";
 
 interface State {
@@ -10,9 +10,11 @@ export default class Board extends React.Component<{}, State> {
     words: ["test", "test2"]
   };
 
-  public render() {
-    return this.state.words.map((v, i) => {
-      return <Card word={v} key={i} />;
-    });
+  public render(): ReactNode {
+    return this.state.words.map(
+      (v, i): ReactNode => {
+        return <Card word={v} key={i} />;
+      }
+    );
   }
 }
